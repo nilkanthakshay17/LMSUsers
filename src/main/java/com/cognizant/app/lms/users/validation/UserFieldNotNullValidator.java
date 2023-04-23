@@ -17,9 +17,4 @@ public class UserFieldNotNullValidator implements ConstraintValidator<UserFieldN
 		return true;
 	}
 
-	@Override
-	public void initialize(UserFieldNotNull constraintAnnotation) {
-		// TODO Auto-generated method stub
-		
-	}
 }

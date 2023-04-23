@@ -26,10 +26,4 @@ public class UserPasswordValidator implements ConstraintValidator<UserPassword, 
 		}
 	}
 
-	@Override
-	public void initialize(UserPassword constraintAnnotation) {
-		// TODO Auto-generated method stub
-		
-	}
-
 }

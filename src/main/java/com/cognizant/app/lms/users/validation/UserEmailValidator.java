@@ -9,7 +9,6 @@ import jakarta.validation.ConstraintValidatorContext;
 import org.springframework.stereotype.Component;
 
 import com.cognizant.app.lms.users.annotation.UserEmail;
-import com.cognizant.app.lms.users.annotation.UserPassword;
 
 @Component
 public class UserEmailValidator implements ConstraintValidator<UserEmail, String> {
@@ -27,12 +26,6 @@ public class UserEmailValidator implements ConstraintValidator<UserEmail, String
 			return emailMatcher.matches();
 		}
 
-	}
-
-	@Override
-	public void initialize(UserEmail constraintAnnotation) {
-		// TODO Auto-generated method stub
-		
 	}
 
 }
