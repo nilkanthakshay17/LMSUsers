@@ -1,0 +1,22 @@
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8010/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    ip-address: true
+server:
+  port: 9092
+spring:
+  application:
+    name: lmsusers
+  data:
+    mongodb:
+      database: lms
+      uri: mongodb://localhost:27017
+
+  config:
+   import: optional:configserver:http://localhost:9095
+  
