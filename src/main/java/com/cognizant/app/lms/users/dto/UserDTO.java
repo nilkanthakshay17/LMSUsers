@@ -16,6 +16,22 @@ public class UserDTO {
 	
 	private String roles;
 	
+	public UserDTO() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public UserDTO(String userId, String userName, String userEmail, boolean userAdmin, String password,
+			String encryptedPassword, String roles) {
+		super();
+		this.userId = userId;
+		this.userName = userName;
+		this.userEmail = userEmail;
+		this.userAdmin = userAdmin;
+		this.password = password;
+		this.encryptedPassword = encryptedPassword;
+		this.roles = roles;
+	}
+
 	public String getUserId() {
 		return userId;
 	}

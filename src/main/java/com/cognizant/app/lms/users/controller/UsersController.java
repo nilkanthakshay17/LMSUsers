@@ -31,6 +31,7 @@ public class UsersController {
 
 	private UsersServiceInt usersServiceInt;
 	
+	@Autowired
 	private ModelMapper modelMapper;
 	
 	@Autowired
@@ -93,7 +94,7 @@ public class UsersController {
 		
 		UserResponseModel updatedUserResponse = modelMapper.map(updatedUserDto, UserResponseModel.class);
 		
-		return ResponseEntity.status(HttpStatus.OK).body(updatedUserResponse);
+		return ResponseEntity.status(HttpStatus.ACCEPTED).body(updatedUserResponse);
 	}
 	
 	@DeleteMapping("/{id}")

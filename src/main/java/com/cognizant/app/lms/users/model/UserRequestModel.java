@@ -21,6 +21,22 @@ public class UserRequestModel {
 	
 	private String roles;
 	
+	
+	public UserRequestModel() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public UserRequestModel(String userName, String userEmail, String password, boolean userAdmin, String roles) {
+		super();
+		this.userName = userName;
+		this.userEmail = userEmail;
+		this.password = password;
+		this.userAdmin = userAdmin;
+		this.roles = roles;
+	}
+
+
+
 	public String getUserName() {
 		return userName;
 	}

@@ -14,6 +14,21 @@ public class UserResponseModel {
 	
 	private String roles;
 	
+	public UserResponseModel() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public UserResponseModel(String userId, String userName, String userEmail, boolean userAdmin,
+			String encryptedPassword, String roles) {
+		super();
+		this.userId = userId;
+		this.userName = userName;
+		this.userEmail = userEmail;
+		this.userAdmin = userAdmin;
+		this.encryptedPassword = encryptedPassword;
+		this.roles = roles;
+	}
+
 	public String getUserId() {
 		return userId;
 	}
